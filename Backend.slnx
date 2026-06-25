@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Veterinaria.api/Veterinaria.api.csproj" />
+  <Project Path="Veterinaria.Application/Veterinaria.Application.csproj" />
+  <Project Path="Veterinaria.Domain/Veterinaria.Domain.csproj" />
+  <Project Path="Veterinaria.Infreaestructure/Veterinaria.Infreaestructure.csproj" />
+</Solution>

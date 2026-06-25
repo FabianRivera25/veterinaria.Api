@@ -1,0 +1,11 @@
+services:
+  cinema-db-regular:
+    image: postgres:16                              # Versión estable de Postgres
+    container_name: Veterinaria_pg_regular_node          # Nombre del contenedor
+    ports:
+      - "5432:5432"                                 # Puerto estándar
+    environment:
+      POSTGRES_PASSWORD: 88711985                # Contraseña
+      POSTGRES_DB: VeterinariaDB                         # Base de datos
+    volumes:
+      - ./data_regular:/var/lib/postgresql/data     # Persistencia: los datos se guardan en tu carpeta local
