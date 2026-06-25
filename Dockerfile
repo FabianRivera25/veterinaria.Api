@@ -11,8 +11,8 @@ COPY . .
 RUN dotnet restore "Backend.slnx"
 
 # Publicar la API
-WORKDIR "/src/Veterinaria.Api"
-RUN dotnet publish "Veterinaria.Api.csproj" -c Release -o /app/publish /p:UseAppHost=false
+WORKDIR "/src/Veterinaria.api"
+RUN dotnet publish "Veterinaria.api.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 # ===============================
 # RUNTIME
@@ -33,4 +33,4 @@ ENV ASPNETCORE_URLS=http://+:${PORT}
 EXPOSE 8080
 
 # Ejecutar la API
-ENTRYPOINT ["dotnet", "Veterinaria.Api.dll"]
+ENTRYPOINT ["dotnet", "Veterinaria.api.dll"]
